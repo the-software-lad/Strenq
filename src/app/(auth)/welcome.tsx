@@ -32,7 +32,10 @@ const Welcome = () => {
                     <Text className='text-center font-inter-bold text-[30px] leading-9 teacking-[-0.8px] text-white'>Stonger very workout</Text>
                     <Text className='mt-2 text-center font-inter text-[15px] text-white/70'>Build muscle. Track every rep.</Text>
                 </View>
-                <Link href="/(root)/(tabs)" asChild>
+                <Link href={{
+                    pathname: "/onboarding/[step]",
+                    params: {step: "gender"}
+                }} asChild>
                     <Button
                         className='mt-6 text-white'
                         rightIcon={
